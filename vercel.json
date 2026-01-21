@@ -1,15 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/next",
-      "config": {
-        "maxLambdaSize": "50mb",
-        "outputDirectory": "dist"
-      }
-    }
-  ],
+  "rootDirectory": "frontend",
   "rewrites": [
     {
       "source": "/api/:path*",
@@ -32,7 +23,7 @@
           "key": "Access-Control-Allow-Headers",
           "value": "X-Requested-With, Content-Type, Accept, Authorization"
         }
-        ]
+      ]
     }
   ]
 }
