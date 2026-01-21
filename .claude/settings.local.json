@@ -77,7 +77,26 @@
       "Bash(git commit -m \"Remove unnecessary backend dependencies from frontend\n\n- Remove bcrypt and jsonwebtoken dependencies that are not needed in frontend\n- These backend libraries could be causing build issues in Vercel environment\n- Keep only essential frontend dependencies\")",
       "Bash(npm ci --only=production)",
       "Bash(npm run build)",
-      "Bash(git commit -m \"Move build dependencies to production dependencies\n\n- Move autoprefixer, postcss, and tailwindcss to dependencies\n- These are needed for the build process in Vercel environment\n- Fixes ''Cannot find module tailwindcss'' build error\")"
+      "Bash(git commit -m \"Move build dependencies to production dependencies\n\n- Move autoprefixer, postcss, and tailwindcss to dependencies\n- These are needed for the build process in Vercel environment\n- Fixes ''Cannot find module tailwindcss'' build error\")",
+      {
+        "mcpServers": {
+          "vercel": {
+            "command": "npx",
+            "args": [
+              "mcp-remote",
+              "https://mcp.vercel.com"
+            ]
+          }
+        }
+      },
+      "Bash(dir \"C:\\\\Users\\\\hcb\\\\Desktop\\\\Hackathon II phase 2 - Copy\\\\frontend\")",
+      "Bash(dir \"C:\\\\Users\\\\hcb\\\\Desktop\\\\Hackathon II phase 2 - Copy\\\\frontend\\\\app\" /s)",
+      "Bash(dir \"C:\\\\Users\\\\hcb\\\\Desktop\\\\Hackathon II phase 2 - Copy\\\\frontend\\\\app\\\\dashboard\")",
+      "Bash(npx mcp-remote https://mcp.vercel.com --help)",
+      "Bash(npx vercel --prod)",
+      "Bash(npm install -g vercel)",
+      "Bash(vercel --prod)",
+      "Bash(vercel --prod --yes)"
     ]
   }
 }
