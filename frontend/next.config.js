@@ -12,6 +12,12 @@ const nextConfig = {
       },
     ]
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals.push('bcrypt', 'jsonwebtoken');
+    }
+    return config;
+  },
 }
 
 module.exports = nextConfig
