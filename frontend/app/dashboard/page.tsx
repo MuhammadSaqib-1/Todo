@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { todoAPI, authAPI } from '@/lib/api';
+import { todoAPI, authAPI } from '../../lib/api';
 import { Todo } from './types';
 
 export default function DashboardPage() {

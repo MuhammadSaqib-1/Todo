@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { authAPI } from '@/lib/api';
+import { authAPI } from '../../lib/api';
 import { Button } from '@/components/Button';
 
 export default function SigninPage() {
