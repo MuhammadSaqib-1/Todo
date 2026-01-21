@@ -15,5 +15,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-
-// Trigger new deployment
