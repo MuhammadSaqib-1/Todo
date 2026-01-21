@@ -1,9 +1,10 @@
 {
   "version": 2,
+  "rootDirectory": "frontend",
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://your-backend-deployed-url/api/:path*"
+      "destination": "https://itzsaqib-full-stack-todo-app.hf.space/api/:path*"
     }
   ],
   "headers": [
